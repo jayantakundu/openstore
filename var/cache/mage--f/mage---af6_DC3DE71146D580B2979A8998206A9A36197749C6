@@ -1,0 +1,66 @@
+<div class="nav-container">
+ <div class="container">
+ <div class="span12">
+    <ul id="nav" class="span9">
+        <li  class="level0 nav-1 first active last level-top"><a href="http://bshop.dev/index.php/food-items.html?___SID=U"  class="level-top" ><span>Food Items</span></a></li><li class="custom_menu_links">
+</li>
+        <li class="last_bg"><a>&nbsp;</a></li>
+    </ul>
+    <ul class="mycartcheck span3">
+    <li><a class="mycart" href="http://bshop.dev/index.php/checkout/cart/?___SID=U">My Cart</a></li>
+    <li><a class="checkout" href="http://bshop.dev/index.php/checkout/onepage/?___SID=U">Checkout</a></li>
+    </ul>
+    </div>
+   </div>
+</div>
+<div class="mobMenu">
+ <div class="container">
+ <div class="span12">
+ <div class="span6">
+<h1>
+<span>Brands</span>
+<a class="menuBox highlight btn btn-navbar" href="javascript:void(0);"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+</h1>
+<div id="menuInnner" style="display:none;">
+       <ul class="accordion">
+		 <li  class="level0 nav-1 first active last level-top"><a href="http://bshop.dev/index.php/food-items.html?___SID=U"  class="level-top" ><span>Food Items</span></a></li>          <span class="clearfix"></span>
+       </ul>
+</div>
+</div>
+<ul class="mycartcheck span6">
+    <li><a class="mycart" href="http://bshop.dev/index.php/checkout/cart/?___SID=U">My Cart</a></li>
+    <li><a class="checkout" href="http://bshop.dev/index.php/checkout/onepage/?___SID=U">Checkout</a></li>
+    </ul>
+    </div>
+ </div>      
+</div>
+<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery('.menuBox').click(function() {
+		if (jQuery('#menuInnner').is(":hidden"))
+		{
+		jQuery('#menuInnner').slideDown("fast");
+		} else {
+		jQuery('#menuInnner').slideUp("fast");
+		}
+		return false;
+		});
+		if(jQuery(window).width() <= 1000){
+			jQuery('.nav-container').hide();
+			jQuery('.mobMenu').show();
+		}else{
+			jQuery('.nav-container').show();
+			jQuery('.mobMenu').hide();
+			}
+	}); 
+	jQuery(window).resize(function(){
+		if(jQuery(window).width() <= 1000){
+			jQuery('.nav-container').hide();
+			jQuery('.mobMenu').show();
+		}else{
+			jQuery('.nav-container').show();
+			jQuery('.mobMenu').hide();
+			}
+		});
+</script>
+
